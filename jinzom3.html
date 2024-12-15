@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>좀비고등학교</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--모달 업데이트 예정-->
+    <div class="modal fade" id="sorry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">안내</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>죄송합니다. <br>추후 업데이트 예정입니다.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--모달 업데이트 예정 끝-->
+
+      <div class="modal fade" id="archer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">아처</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/archer1.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="medic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">메딕</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/medic1.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="chairman" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">체어맨</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/chairman1.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="fireman" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">파이어맨</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/fireman1.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="cola" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">봄버맨</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/cola1.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="backattack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">백어택커</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/backattack1.jpg" class="w-75">
+              <img src="image/backattack2.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="soard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">소드맨</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/soard1.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="cheer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">치어리더</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="image/cheer1.png" class="w-75">
+              <img src="image/cheer2.png" class="w-75">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--상단 네비게이션 바1-->
+    <div class="container">
+        <nav class="navbar justify-content-around">
+          <div class="d-flex">
+            <a class="navbar-brand fw-bold" href="index.html">
+              <img src="image/logo1.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+              좀비고등학교
+            </div>
+            </a>
+            <div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="search">
+              <button class="btn btn-danger" style="background-color: rgb(160,0,0);" type="submit"><i class="bi bi-search" ></i></button>
+            </form>
+          </div>
+        </nav>
+       
+        <!--상단 네비게이션 바1 끝-->
+      
+        <!--상단 네비게이션 바2-->
+        <nav class="navbar navbar-expand-lg ">
+          <div class="mx-auto">
+            <div class="collapse navbar-collapse d-flex justify-content-center fs-6" id="navbarText">
+              <ul class="nav ">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-5 py-3 style1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">학교 소개</a>
+                      <ul class="dropdown-menu">
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">학교장인사말</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">설립자</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">학교 연혁</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">학생 복지</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">오시는 길</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-5 py-3 style1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">진격의 좀비</a>
+                      <ul class="dropdown-menu">
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode0</a></li>
+                        <li><a class="dropdown-item" href="jinzom1.html">Episode1</a></li>
+                        <li><a class="dropdown-item" href="jinzom2.html">Episode2</a></li>
+                        <li><a class="dropdown-item" href="jinzom3.html">Episode3</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-5 py-3 style1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">히어로즈</a>
+                      <ul class="dropdown-menu">
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode1</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode2</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode3</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode4</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-5 py-3 style1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">아포칼립스</a>
+                      <ul class="dropdown-menu">
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode1</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-5 py-3 style1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">디비전</a>
+                      <ul class="dropdown-menu">
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode1</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode2</a></li>
+                        <li data-bs-toggle="modal"  data-bs-target="#sorry"><a class="dropdown-item" href="#">Episode3</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle px-5 py-3 style1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">소통마당</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://cafe.naver.com/onimobile" target="_blank">좀비고 카페</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC8DE6aei0DOKa1s3PziV8Aw" target="_blank">좀비고 유튜브</a></li>
+                        <li><a class="dropdown-item" href="https://x.com/AwesomePiece?lang=ko" target="_blank">좀비고 트위터</a></li>
+                        <li><a class="dropdown-item" href="ask.html">문의사항</a></li>
+                      </ul>
+                    </li>
+                </div>
+             </div>
+          </nav>
+          <!--상단 네비게이션 바2 끝-->
+
+          <!--대표 사진-->
+          <div class="row mx-auto">
+            <div class="col text-center">
+             <img class="w-75" src="image/big2.png" >
+            </div>
+          </div>
+          <!--대표 사진 끝-->
+          <!--컨텐츠-->
+          <div class="row mx-auto justify-content-center">
+            <div class="col-2 p-4 mx-3 my-4">
+              <h4 style="color: rgb(160,0,0);">진격의 좀비</h4>
+              <br>
+              <hr/>
+              <a href="#" data-bs-toggle="modal"  data-bs-target="#sorry" >Episode0</a>
+              <hr/>
+              <a  href="jinzom1.html">Episode1</a>
+              <hr/>
+              <a  href="jinzom2.html">Episode2</a>
+              <div class="style2">
+              <hr/>
+              <a class="style1" href="jinzom3.html"  >Episode3</a><hr/>
+              </div>
+            </div>
+
+            <div class="col-7 p-4 mx-3 my-5">
+              <h2>Episode3</h2>
+              <p class="fs-6 text-end" style="color: rgb(208, 206, 206);">홈 > 진격의 좀비 > Episode3</p>
+              <hr/>
+            <div class="my-3 ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/GhJoyAE_PVs?si=v7XteQ3deo0p6vTw" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="my-4 text-center">
+            <h5>역할군</h5>
+            <p style="color: rgb(166, 166, 166);">(아이콘 클릭 시 역할군 정보 열람 가능)</p>
+            </div>
+             <div class="row mx-auto justify-content-center">
+               <div class="col-2 mx-3 text-center">
+                <img class="w-100" src="image/archer.webp" data-bs-toggle="modal"  data-bs-target="#archer"><p>아처</p>
+               </div>
+               <div class="col-2 mx-3 text-center">
+                <img class="w-100" src="image/medic.webp" data-bs-toggle="modal"  data-bs-target="#medic"><p>메딕</p>
+               </div>
+               <div class="col-2 mx-3 text-center">
+                <img class="w-100" src="image/chairman.webp" data-bs-toggle="modal"  data-bs-target="#chairman"><p>체어맨</p>
+               </div>
+               <div class="col-2 mx-3 text-center">
+                <img class="w-100" src="image/fireman.webp" data-bs-toggle="modal" data-bs-target="#fireman"><p>파이어맨</p>
+               </div>
+             </div>
+
+             <div class="row mx-auto justify-content-center">
+              <div class="col-2 mx-3 text-center">
+               <img class="w-100" src="image/cola.webp" data-bs-toggle="modal"  data-bs-target="#cola"><p>봄버맨</p>
+              </div>
+              <div class="col-2 mx-3 text-center">
+               <img class="w-100" src="image/backattack.webp" data-bs-toggle="modal"  data-bs-target="#backattack"><p>백어택커</p>
+              </div>
+              <div class="col-2 mx-3 text-center">
+                <img class="w-100" src="image/soard.webp" data-bs-toggle="modal"  data-bs-target="#soard"><p>소드맨</p>
+               </div>
+               <div class="col-2 mx-3 text-center">
+                <img class="w-100" src="image/cheer.webp" data-bs-toggle="modal"  data-bs-target="#cheer"><p>치어리더</p>
+               </div>
+               <div class="text-center">
+                <p>인원 제한: 최대 4인 </p><p>추천 조합: 메딕, 파이어맨, 백어택커, 소드맨 </p>
+                </div>
+            </div>
+
+             <div class="my-3 accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button  collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    Stage 0
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <h5>[장소]</h5>
+                    <p>B동 좀비 실험실</p>
+                    <h5>[스토리]</h5>
+                    <p>좀비 실험실에 감금되어있던 친구들을 구했다. 일단 이 위험천만한 곳을 빠져나가야 한다.</p>
+                    <h5>[미션]</h5>
+                    <p>연구실 바깥으로 이동하라!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Stage 1
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <h5>[장소]</h5>
+                    <p>B동 좀비 실험실</p>
+                    <h5>[스토리]</h5>
+                    <p>감금되었던 친구들은 납치당했던 경로를 유추해 탈출구를 찾아냈다. 하지만...</p>
+                    <h5>[미션]</h5>
+                    <p>연구실 바깥으로 이동하라!</p>                 
+                   </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Stage 2
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <h5>[장소]</h5>
+                    <p>사이키 클럽</p>
+                    <h5>[스토리]</h5>
+                    <p>좀비실험실과 사이키 클럽이 연결되어 있을 줄은 생각도 못했다<br>평소와는 다르게 사이키 클럽은 적막으로 가득했다.</p>
+                    <h5>[미션]</h5>
+                    <p>DJ좀비를 저지하라!</p>             
+                 </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Stage 3
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <h5>[장소]</h5>
+                    <p>학교 운동장</p>
+                    <h5>[스토리]</h5>
+                    <p>우리는 나래와 동석이를 만나기 위해 본관으로 가고 있었다. <br> 그런데 우리 앞을 막아선 것은 다름아닌 3학년 선배들이었다.</p>
+                    <h5>[미션]</h5>
+                    <p>더티 민트랑 펑키 핑크를 저지하라!</p>           
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Stage 4
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <h5>[장소]</h5>
+                    <p>학교 본관 옥상</p>
+                    <h5>[스토리]</h5>
+                    <p>나래와 동석이가 사라졌다. 대체 어디로 간 거지? <br>나래가 본관에서 동석이를 지켜주고 있을 거라고 했는데... <br> 본관을 찾아봐야겠다. 별일이 없어야 할텐데...</p>
+                    <h5>[미션]</h5>
+                    <p>사무엘을 저지하라!</p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+             
+            </div>
+
+            </div>
+           
+          <!--컨텐츠 끝-->
+
+</div>
+          <!--바닥-->
+          <div class="container">
+          <div class="row mx-auto justify-content-center">
+            <div class="col-10">
+             <hr/>
+            </div>
+          </div>
+        
+          <div class="row justify-content-center">
+            <div class="col-2 text-center ">
+            <a href="https://awesomepiece.com/management.html"  target="_blank">게임 운영정책</a>
+            </div>
+            <div class="col-1 text-center">
+              |
+              </div>
+            <div class="col-2 text-center p-0">
+            <a href="https://awesomepiece.com/play_agreement.html" target="_blank">게임 이용약관</a>
+            </div>
+            <div class="col-1 text-center">
+              |
+              </div>
+            <div class="col-2 text-center p-0" >
+            <a href="https://awesomepiece.com/privacy.html" target="_blank">개인정보처리방침</a> 
+            </div>
+          </div>
+        
+          <div class="row mx-auto my-2 justify-content-center">
+            <div class="col text-center">
+              <a href="#" class="link-dark"><u>▲ TOP</u></a>
+            </div>
+          </div>
+          <!--바닥 끝-->
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

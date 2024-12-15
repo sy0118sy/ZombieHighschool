@@ -1,0 +1,30 @@
+body {
+    font-family: 'Hahmlet', sans-serif;
+    background-color: rgb(242, 242, 242);
+}
+
+.nav-item, .nav-link{background-color: rgb(160,0, 0);
+           }
+
+.card {border-color: black;}
+
+a { text-decoration:none;
+    color:black;}
+a:hover { text-decoration:none;
+          color:gray;}
+a.style1{ text-decoration:none;
+            color:white;}
+a.style1:hover { text-decoration:none;
+                  color:rgb(175, 175, 175);}
+a.style1:active { text-decoration:none;
+                    color:gray;}
+
+div.style2 {  background-color: rgb(160,0,0); }
+
+.accordion-button:hover{background-color: rgba(160, 0, 0, 0.568);}
+.accordion-button:focus{background-color: rgba(160, 0, 0, 0.568);}
+.accordion-button:icon-active{background-color: rgba(160, 0, 0, 0.568);}
+.accordion {
+    --bs-accordion-active-bg: rgba(160, 0, 0, 0.568);
+    --bs-accordion-active-color: rgb(232, 232, 232);
+}
